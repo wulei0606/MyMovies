@@ -16,11 +16,14 @@ Including another URLconf
 from django.urls import path, re_path, include
 from django.contrib import admin
 
-from users.views import IndexView,LoginView,LoginOutView
+from users.views import IndexView,LoginView,LoginOutView,RegisterView
+from movies.views import AnimationView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',IndexView.as_view(),name="index"),
     path('login/',LoginView.as_view(),name="login"),
     path('logout/',LoginOutView.as_view(),name="logout"),
+    path('register/',RegisterView.as_view(),name="register"),
+    path('animation/',AnimationView.as_view(),name="animation"),
 ]

@@ -20,7 +20,7 @@
                                 <input id="input_password" class="form-control input-lg" placeholder="密码" name="password" type="password" value="">
                             </div>
                             <div class="col-md-12" id="error_password"></div>
-                            <!--  <a href="{% url 'login' %}" class="btn btn-lg btn-success btn-block">登录</a>  -->
+                            <div class="col-md-12" id="error_email">{% for key,error in register_form.errors.items %}{{ error }}{% endfor %}{{ msg }}</div>
                             <input class="btn btn-lg btn-success btn-block" type="submit" value="立即登录" />
                         </fieldset>
                     {% csrf_token %}

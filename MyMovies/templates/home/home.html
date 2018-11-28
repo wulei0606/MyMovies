@@ -70,7 +70,7 @@
                     <a class="curlink" href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span>&nbsp;登录</a>
                 </li>
                 <li>
-                    <a class="curlink" href="#"><span class="glyphicon glyphicon-plus"></span>&nbsp;注册</a>
+                    <a class="curlink" href="{% url 'register' %}"><span class="glyphicon glyphicon-plus"></span>&nbsp;注册</a>
                 </li>
                 <li>
                     <a class="curlink" href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;会员</a>
@@ -109,7 +109,7 @@
 <script src="{% static 'base/js/wow.min.js'%}"></script>
 <script src="{% static 'lazyload/jquery.lazyload.min.js'%}"></script>
 {% block js %}{% endblock %}
-<script src="{% static 'js/holder.min.js' %}"></script>
+<script src="//cdn.bootcss.com/holder/2.9.4/holder.min.js"></script>
 <script>
     $(function() {
         new WOW().init();
