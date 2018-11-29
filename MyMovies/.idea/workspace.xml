@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="515f7ca2-7a65-44d8-aef0-d9781b2d4cd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/movies/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/movies/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/movies/migrations/0002_auto_20181129_1552.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/user_operation/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/user_operation/migrations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyMovies/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyMovies/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyMovies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyMovies/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/movies/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/movies/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/movies/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/movies/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/movies/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/movies/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/users/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/layout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,36 +74,36 @@
     <session id="1589006550">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="10" />
-          <entry key="py" value="17" />
+          <entry key="html" value="12" />
+          <entry key="py" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="10" />
-          <entry key="Python" value="17" />
+          <entry key="HTML" value="12" />
+          <entry key="Python" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="103" />
-          <entry key="py" value="268" />
-          <entry key="py@MyMovies" value="10" />
+          <entry key="html" value="484" />
+          <entry key="py" value="1991" />
+          <entry key="py@MyMovies" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CommandLine" value="10" />
-          <entry key="HTML" value="103" />
-          <entry key="Python" value="268" />
+          <entry key="CommandLine" value="45" />
+          <entry key="HTML" value="484" />
+          <entry key="Python" value="1991" />
         </counts>
       </usages-collector>
     </session>
@@ -106,26 +111,56 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/users/views.py">
+        <entry file="file://$PROJECT_DIR$/apps/movies/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="35" />
+            <state relative-caret-position="364">
+              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
               <folding>
-                <marker date="1543414219191" expanded="true" signature="829:834" ph="..." />
-                <marker date="1543414219191" expanded="true" signature="929:934" ph="..." />
+                <element signature="e#0#35#0" expanded="true" />
+                <marker date="1543488748189" expanded="true" signature="148:153" ph="..." />
+                <marker date="1543488748189" expanded="true" signature="252:257" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/movies/views.py">
+        <entry file="file://$PROJECT_DIR$/apps/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="286">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <marker date="1543414519518" expanded="true" signature="121:126" ph="..." />
+                <element signature="e#0#53#0" expanded="true" />
+                <marker date="1543478307137" expanded="true" signature="862:867" ph="..." />
+                <marker date="1543478307137" expanded="true" signature="1018:1023" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/movies/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+                <marker date="1543477937230" expanded="true" signature="119:124" ph="..." />
+                <marker date="1543477937230" expanded="true" signature="1500:1741" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/user_operation/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+                <marker date="1543474285478" expanded="true" signature="358:363" ph="..." />
+                <marker date="1543474285478" expanded="true" signature="628:629" ph="..." />
               </folding>
             </state>
           </provider>
@@ -134,8 +169,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyMovies/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="27" column="61" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="61" />
+            <state relative-caret-position="359">
+              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
               <folding>
                 <element signature="e#642#688#0" expanded="true" />
               </folding>
@@ -144,82 +179,98 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/users/models.py">
+        <entry file="file://$PROJECT_DIR$/templates/home/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6">
-              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/home/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/home/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="21" column="77" selection-start-line="21" selection-start-column="77" selection-end-line="21" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/home/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2288">
-              <caret line="88" column="30" lean-forward="true" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+            <state relative-caret-position="371">
+              <caret line="95" column="22" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#4643#4698#0#HTML" expanded="true" />
+                <element signature="e#4730#4768#0#HTML" expanded="true" />
+                <element signature="e#4882#4903#0#HTML" expanded="true" />
+                <element signature="e#4979#5000#0#HTML" expanded="true" />
+                <element signature="e#5076#5097#0#HTML" expanded="true" />
+                <element signature="e#5179#5200#0#HTML" expanded="true" />
+                <element signature="e#5282#5303#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/home/index.html">
+        <entry file="file://$PROJECT_DIR$/templates/home/play.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            <state relative-caret-position="-5460">
+              <caret line="72" column="52" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
               <folding>
-                <element signature="e#112#135#0#HTML" expanded="true" />
+                <element signature="e#1463#1484#0#HTML" expanded="true" />
+                <element signature="e#1673#1679#0#HTML" expanded="true" />
+                <element signature="e#1752#1773#0#HTML" expanded="true" />
+                <element signature="e#1878#1942#0#HTML" expanded="true" />
+                <element signature="e#2022#2028#0#HTML" expanded="true" />
+                <element signature="e#2198#2252#0#HTML" expanded="true" />
+                <element signature="e#2331#2337#0#HTML" expanded="true" />
+                <element signature="e#2505#2559#0#HTML" expanded="true" />
+                <element signature="e#2639#2645#0#HTML" expanded="true" />
+                <element signature="e#2816#2870#0#HTML" expanded="true" />
+                <element signature="e#2956#2962#0#HTML" expanded="true" />
+                <element signature="e#3130#3184#0#HTML" expanded="true" />
+                <element signature="e#3264#3270#0#HTML" expanded="true" />
+                <element signature="e#3453#3474#0#HTML" expanded="true" />
+                <element signature="e#4079#4133#0#HTML" expanded="true" />
+                <element signature="e#4217#4223#0#HTML" expanded="true" />
+                <element signature="e#4401#4455#0#HTML" expanded="true" />
+                <element signature="e#4535#4541#0#HTML" expanded="true" />
+                <element signature="e#4713#4767#0#HTML" expanded="true" />
+                <element signature="e#4850#4856#0#HTML" expanded="true" />
+                <element signature="e#5028#5082#0#HTML" expanded="true" />
+                <element signature="e#5165#5171#0#HTML" expanded="true" />
+                <element signature="e#5500#5523#0#HTML" expanded="true" />
+                <element signature="e#5707#5713#0#HTML" expanded="true" />
+                <element signature="e#6295#6318#0#HTML" expanded="true" />
+                <element signature="e#6425#6451#0#HTML" expanded="true" />
+                <element signature="e#6932#6938#0#HTML" expanded="true" />
+                <element signature="e#6971#6977#0#HTML" expanded="true" />
+                <element signature="e#7088#7094#0#HTML" expanded="true" />
+                <element signature="e#7470#7503#0#HTML" expanded="true" />
+                <element signature="e#8705#8738#0#HTML" expanded="true" />
+                <element signature="e#9940#9973#0#HTML" expanded="true" />
+                <element signature="e#11175#11208#0#HTML" expanded="true" />
+                <element signature="e#12410#12443#0#HTML" expanded="true" />
+                <element signature="e#14115#14121#0#HTML" expanded="true" />
+                <element signature="e#14122#14128#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/home/animation.html">
+        <entry file="file://$PROJECT_DIR$/MyMovies/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1195">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state relative-caret-position="-161">
+              <caret line="134" column="47" selection-start-line="134" selection-start-column="47" selection-end-line="134" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/user_operation/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
               <folding>
-                <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#a#1;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#a#2;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#a#3;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
+                <marker date="1543476875693" expanded="true" signature="195:200" ph="..." />
+                <marker date="1543476875693" expanded="true" signature="349:354" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/home/layout.html">
+        <entry file="file://$PROJECT_DIR$/apps/users/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="85" column="9" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="182">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -241,6 +292,7 @@
     <replaceStrings>
       <replace>%}</replace>
       <replace>{% 'static'</replace>
+      <replace>{% static</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -251,17 +303,24 @@
       <list>
         <option value="$PROJECT_DIR$/apps/users/models.py" />
         <option value="$PROJECT_DIR$/MyMovies/__init__.py" />
-        <option value="$PROJECT_DIR$/MyMovies/settings.py" />
         <option value="$PROJECT_DIR$/apps/users/forms.py" />
         <option value="$PROJECT_DIR$/templates/home/register.html" />
         <option value="$PROJECT_DIR$/templates/home/login.html" />
         <option value="$PROJECT_DIR$/templates/home/home.html" />
         <option value="$PROJECT_DIR$/templates/home/animation.html" />
-        <option value="$PROJECT_DIR$/apps/users/views.py" />
-        <option value="$PROJECT_DIR$/apps/movies/views.py" />
-        <option value="$PROJECT_DIR$/MyMovies/urls.py" />
         <option value="$PROJECT_DIR$/templates/home/layout.html" />
+        <option value="$PROJECT_DIR$/apps/users/apps.py" />
+        <option value="$PROJECT_DIR$/apps/users/admin.py" />
+        <option value="$PROJECT_DIR$/apps/user_operation/models.py" />
+        <option value="$PROJECT_DIR$/MyMovies/settings.py" />
+        <option value="$PROJECT_DIR$/apps/user_operation/admin.py" />
+        <option value="$PROJECT_DIR$/apps/movies/admin.py" />
+        <option value="$PROJECT_DIR$/apps/movies/models.py" />
+        <option value="$PROJECT_DIR$/apps/users/views.py" />
         <option value="$PROJECT_DIR$/templates/home/index.html" />
+        <option value="$PROJECT_DIR$/MyMovies/urls.py" />
+        <option value="$PROJECT_DIR$/apps/movies/views.py" />
+        <option value="$PROJECT_DIR$/templates/home/play.html" />
       </list>
     </option>
   </component>
@@ -276,11 +335,11 @@
       <path value="$PROJECT_DIR$/static/lazyload/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="224" />
-    <option name="y" value="29" />
-    <option name="width" value="1518" />
-    <option name="height" value="1012" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="241" />
+    <option name="y" value="94" />
+    <option name="width" value="863" />
+    <option name="height" value="888" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -290,7 +349,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -312,18 +370,18 @@
             <path>
               <item name="MyMovies" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyMovies" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyMovies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyMovies" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="movies" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyMovies" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyMovies" type="462c0819:PsiDirectoryNode" />
               <item name="MyMovies" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyMovies" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyMovies" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyMovies" type="b2602c69:ProjectViewProjectNode" />
@@ -340,6 +398,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -357,6 +416,7 @@
       <recent name="I:\DjangoProject\MyMovies" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\MyMovies\MyMovies\templates\home" />
       <recent name="I:\MyMovies\MyMovies\apps" />
       <recent name="I:\DjangoProject\MyMovies\apps" />
     </key>
@@ -397,13 +457,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="MyMovies.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\wulei\Envs\Django_movies\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
+      <option name="port" value="8002" />
       <option name="host" value="" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
@@ -445,15 +505,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="224" y="29" width="1518" height="1012" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19753087" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11513859" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.21428572" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.26057908" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39929742" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -507,7 +567,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/apps/users/views.py</url>
-          <line>64</line>
+          <line>66</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
@@ -545,16 +605,8 @@
     <entry file="file://$PROJECT_DIR$/templates/admin/admin.html" />
     <entry file="file://$PROJECT_DIR$/templates/ui/admin_page.html" />
     <entry file="file://$PROJECT_DIR$/templates/home/pwd.html" />
-    <entry file="file://$PROJECT_DIR$/templates/home/play.html" />
     <entry file="file://$PROJECT_DIR$/templates/home/moviecol.html" />
     <entry file="file://$PROJECT_DIR$/templates/home/loginlog.html" />
-    <entry file="file://$PROJECT_DIR$/MyMovies/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2158">
-          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/users/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -645,16 +697,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/home/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="468">
           <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
         </state>
       </provider>
@@ -666,31 +711,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/home/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="35" />
+        <state relative-caret-position="2288">
+          <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
           <folding>
-            <marker date="1543414219191" expanded="true" signature="829:834" ph="..." />
-            <marker date="1543414219191" expanded="true" signature="929:934" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/movies/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1543414519518" expanded="true" signature="121:126" ph="..." />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/home/animation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1195">
+        <state relative-caret-position="52">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -703,29 +736,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyMovies/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="27" column="61" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="61" />
-          <folding>
-            <element signature="e#642#688#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2288">
-          <caret line="88" column="30" lean-forward="true" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/home/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="2210">
           <caret line="85" column="9" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -734,12 +747,184 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Envs/Django_movies/Lib/site-packages/django/db/models/fields/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37">
+          <caret line="2103" column="6" selection-start-line="2103" selection-start-column="6" selection-end-line="2103" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/users/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/users/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1543476032577" expanded="true" signature="138:339" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/movies/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1543476945101" expanded="true" signature="140:145" ph="..." />
+            <marker date="1543476945101" expanded="true" signature="633:776" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user_operation/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1543474285478" expanded="true" signature="358:363" ph="..." />
+            <marker date="1543474285478" expanded="true" signature="628:629" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user_operation/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1543476875693" expanded="true" signature="195:200" ph="..." />
+            <marker date="1543476875693" expanded="true" signature="349:354" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/movies/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1543477937230" expanded="true" signature="119:124" ph="..." />
+            <marker date="1543477937230" expanded="true" signature="1500:1741" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+            <marker date="1543478307137" expanded="true" signature="862:867" ph="..." />
+            <marker date="1543478307137" expanded="true" signature="1018:1023" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyMovies/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="134" column="47" selection-start-line="134" selection-start-column="47" selection-end-line="134" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyMovies/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="e#642#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/home/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        <state relative-caret-position="371">
+          <caret line="95" column="22" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
           <folding>
-            <element signature="e#112#135#0#HTML" expanded="true" />
+            <element signature="e#4643#4698#0#HTML" expanded="true" />
+            <element signature="e#4730#4768#0#HTML" expanded="true" />
+            <element signature="e#4882#4903#0#HTML" expanded="true" />
+            <element signature="e#4979#5000#0#HTML" expanded="true" />
+            <element signature="e#5076#5097#0#HTML" expanded="true" />
+            <element signature="e#5179#5200#0#HTML" expanded="true" />
+            <element signature="e#5282#5303#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/movies/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1543488748189" expanded="true" signature="148:153" ph="..." />
+            <marker date="1543488748189" expanded="true" signature="252:257" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home/play.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5460">
+          <caret line="72" column="52" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
+          <folding>
+            <element signature="e#1463#1484#0#HTML" expanded="true" />
+            <element signature="e#1673#1679#0#HTML" expanded="true" />
+            <element signature="e#1752#1773#0#HTML" expanded="true" />
+            <element signature="e#1878#1942#0#HTML" expanded="true" />
+            <element signature="e#2022#2028#0#HTML" expanded="true" />
+            <element signature="e#2198#2252#0#HTML" expanded="true" />
+            <element signature="e#2331#2337#0#HTML" expanded="true" />
+            <element signature="e#2505#2559#0#HTML" expanded="true" />
+            <element signature="e#2639#2645#0#HTML" expanded="true" />
+            <element signature="e#2816#2870#0#HTML" expanded="true" />
+            <element signature="e#2956#2962#0#HTML" expanded="true" />
+            <element signature="e#3130#3184#0#HTML" expanded="true" />
+            <element signature="e#3264#3270#0#HTML" expanded="true" />
+            <element signature="e#3453#3474#0#HTML" expanded="true" />
+            <element signature="e#4079#4133#0#HTML" expanded="true" />
+            <element signature="e#4217#4223#0#HTML" expanded="true" />
+            <element signature="e#4401#4455#0#HTML" expanded="true" />
+            <element signature="e#4535#4541#0#HTML" expanded="true" />
+            <element signature="e#4713#4767#0#HTML" expanded="true" />
+            <element signature="e#4850#4856#0#HTML" expanded="true" />
+            <element signature="e#5028#5082#0#HTML" expanded="true" />
+            <element signature="e#5165#5171#0#HTML" expanded="true" />
+            <element signature="e#5500#5523#0#HTML" expanded="true" />
+            <element signature="e#5707#5713#0#HTML" expanded="true" />
+            <element signature="e#6295#6318#0#HTML" expanded="true" />
+            <element signature="e#6425#6451#0#HTML" expanded="true" />
+            <element signature="e#6932#6938#0#HTML" expanded="true" />
+            <element signature="e#6971#6977#0#HTML" expanded="true" />
+            <element signature="e#7088#7094#0#HTML" expanded="true" />
+            <element signature="e#7470#7503#0#HTML" expanded="true" />
+            <element signature="e#8705#8738#0#HTML" expanded="true" />
+            <element signature="e#9940#9973#0#HTML" expanded="true" />
+            <element signature="e#11175#11208#0#HTML" expanded="true" />
+            <element signature="e#12410#12443#0#HTML" expanded="true" />
+            <element signature="e#14115#14121#0#HTML" expanded="true" />
+            <element signature="e#14122#14128#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

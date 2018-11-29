@@ -11,6 +11,7 @@ from django.shortcuts import render
 from django.views import View
 
 from users.models import UserProfile
+from movies.models import Movies
 from .forms import LoginForm,RegisterForm
 
 
@@ -26,7 +27,8 @@ class CuseomBackend(ModelBackend):
 
 class IndexView(View):
     def get(self,request):
-        return render(request,'home/index.html')
+        movies = Movies.objects.all()
+        return render(request,'home/index.html',{"movies":movies})
 
 class LoginView(View):
     def get(self,request):

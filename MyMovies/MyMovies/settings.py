@@ -15,8 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -28,9 +26,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
-#配置自定义登录验证
+# 配置自定义登录验证
 AUTHENTICATION_BACKENDS = [
     'users.views.CuseomBackend',
 ]
@@ -44,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users',
+    'movies',
+    'user_operation',
 ]
 
 AUTH_USER_MODEL = "users.UserProfile"
@@ -63,7 +62,7 @@ ROOT_URLCONF = 'MyMovies.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR+"/templates")],
+        'DIRS': [os.path.join(BASE_DIR + "/templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,7 +77,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'MyMovies.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
@@ -92,7 +90,6 @@ DATABASES = {
         "OPTIONS": {"init_command": "SET default_storage_engine=INNODB;"}
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -111,7 +108,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
@@ -132,9 +128,15 @@ USE_TZ = False
 SUIT_CONFIG = {  # suit页面配置
     'ADMIN_NAME': '微电影管理平台',  # 登录界面提示
     'LIST_PER_PAGE': 20,  # 表中显示行数
-    'MENU': ({'label': u'用户管理', 'app': 'auth',
+    'MENU': ({'label': u'用户管理', 'app': 'users',
               'icon': 'icon-lock',  # 显示左边菜单的图标
-              'models': ('auth.User', 'auth.Group')},  # 每一个字典表示左侧菜单的一栏
+              'models': ('users.UserProfile')},  # 每一个字典表示左侧菜单的一栏
+             {'label': u'电影管理', 'app': 'movies',
+              'icon': 'icon-lock',  # 显示左边菜单的图标
+              'models': ('movies.Tag', 'movies.Movies', 'movies.Preview')},  # 每一个字典表示左侧菜单的一栏
+             {'label': u'用户操作管理', 'app': 'user_operation',
+              'icon': 'icon-lock',  # 显示左边菜单的图标
+              'models': ('user_operation.Comment', 'user_operation.Moviecol')},  # 每一个字典表示左侧菜单的一栏
              {'label': u'监控管理', 'app': 'frame',
               'models': ('frame.Markets', 'frame.Products', 'frame.Links', 'frame.Modules', 'frame.MachineRooms',
                          'frame.Bases', 'frame.Accounts', 'frame.Zabbix_Hosts', 'frame.Zabbix_Items', 'frame.Whites',
@@ -147,8 +149,8 @@ SUIT_CONFIG = {  # suit页面配置
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS=(
-
-os.path.join(BASE_DIR,'static'),
-
-)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
