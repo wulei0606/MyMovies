@@ -39,7 +39,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="{% url 'index' %}" class="navbar-brand" style="width:250px;">
+            <a href="{% url 'index' page=1 %}" class="navbar-brand" style="width:250px;">
                 <img src="{%static "base/images/logo.png" %}" style="height:30px;">&nbsp;微电影
             </a>
         </div>
@@ -56,11 +56,11 @@
             </form>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="curlink" href="#"><span class="glyphicon glyphicon-film"></span>&nbsp;电影</a>
+                    <a class="curlink" href="{% url 'index' page=1 %}"><span class="glyphicon glyphicon-film"></span>&nbsp;电影</a>
                 </li>
                 {% if request.user.is_authenticated %}
                 <li>
-                    <a class="curlink" href="#"><span class="glyphicon glyphicon-user"></span>{{ request.user.username }}</a>
+                    <a class="curlink" href="{% url 'userinfo' %}"><span class="glyphicon glyphicon-user"></span>{{ request.user.username }}</a>
                 </li>
                 <li>
                     <a class="curlink" href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span>&nbsp;退出</a>

@@ -21,6 +21,7 @@ class UserProfile(AbstractUser):
     # mobile = models.CharField(null=True, blank=True, max_length=11, verbose_name="电话")
     mobile = models.CharField(null=True, blank=True, max_length=11, verbose_name="电话", help_text="电话号码")
     email = models.EmailField(max_length=100, null=True, blank=True, verbose_name="邮箱")
+    image = models.ImageField(upload_to="users/%Y/%m", default=u"users/default.png")
 
     class Meta:
         verbose_name = "用户信息"

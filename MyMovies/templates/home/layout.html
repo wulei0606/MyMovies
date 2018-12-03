@@ -8,21 +8,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
     <title>微电影</title>
-    <link rel="shortcut icon" href="{% static  'base/images/logo.png'%}">
-    <link rel="stylesheet" href="{% static 'base/css/bootstrap.min.css'%}">
-    <link rel="stylesheet" href="{% static  'base/css/bootstrap-movie.css'%}">
-    <link rel="stylesheet" href="{% static  'base/css/animate.css'%}">
+    <link rel="shortcut icon" href="{% static  'base/images/logo.png' %}">
+    <link rel="stylesheet" href="{% static 'base/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static  'base/css/bootstrap-movie.css' %}">
+    <link rel="stylesheet" href="{% static  'base/css/animate.css' %}">
     {% block css %}{% endblock %}
     <style>
-        .navbar-brand>img {
+        .navbar-brand > img {
             display: inline;
         }
 
     </style>
     <style>
-        .media{
-            padding:3px;
-            border:1px solid #ccc
+        .media {
+            padding: 3px;
+            border: 1px solid #ccc
         }
 
     </style>
@@ -39,8 +39,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="{% url 'index' %}" class="navbar-brand" style="width:250px;">
-                <img src="{% static "base/images/logo.png"%}" style="height:30px;">&nbsp;微电影
+            <a href="{% url 'index' page=1 %}" class="navbar-brand" style="width:250px;">
+                <img src="{% static "base/images/logo.png" %}" style="height:30px;">&nbsp;微电影
             </a>
         </div>
         <!--小屏幕导航按钮和logo-->
@@ -48,33 +48,37 @@
         <div class="navbar-collapse collapse">
             <form class="navbar-form navbar-left" role="search" style="margin-top:18px;">
                 <div class="form-group input-group">
-                    <input type="text" class="form-control" placeholder="请输入电影名！">
+                    <input type="text" class="form-control" placeholder="请输入电影名！" id="keyword" value="{{ search_keyword }}"
+                    onkeydown="if(event.keyCode===13)return false;"
+                    >
                     <span class="input-group-btn">
-                        <a class="btn btn-default" href="#"><span class="glyphicon glyphicon-search"></span>&nbsp;搜索</a>
+                        <a class="btn btn-default" id="do_search"><span
+                                class="glyphicon glyphicon-search"></span>&nbsp;搜索</a>
                     </span>
                 </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="curlink" href="#"><span class="glyphicon glyphicon-film"></span>&nbsp;电影</a>
+                    <a class="curlink" href="{% url 'index' page=1 %}"><span class="glyphicon glyphicon-film"></span>&nbsp;电影</a>
                 </li>
                 {% if request.user.is_authenticated %}
-                <li>
-                    <a class="curlink" href="#"><span class="glyphicon glyphicon-user"></span>{{ request.user.username }}</a>
-                </li>
-                <li>
-                    <a class="curlink" href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span>&nbsp;退出</a>
-                </li>
+                    <li>
+                        <a class="curlink" href="{% url 'userinfo' %}"><span
+                                class="glyphicon glyphicon-user"></span>{{ request.user.username }}</a>
+                    </li>
+                    <li>
+                        <a class="curlink" href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span>&nbsp;退出</a>
+                    </li>
                 {% else %}
-                <li>
-                    <a class="curlink" href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span>&nbsp;登录</a>
-                </li>
-                <li>
-                    <a class="curlink" href="{% url 'register' %}"><span class="glyphicon glyphicon-plus"></span>&nbsp;注册</a>
-                </li>
-                <li>
-                    <a class="curlink" href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;会员</a>
-                </li>
+                    <li>
+                        <a class="curlink" href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span>&nbsp;登录</a>
+                    </li>
+                    <li>
+                        <a class="curlink" href="{% url 'register' %}"><span class="glyphicon glyphicon-plus"></span>&nbsp;注册</a>
+                    </li>
+                    <li>
+                        <a class="curlink" href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;会员</a>
+                    </li>
                 {% endif %}
             </ul>
         </div>
@@ -84,7 +88,7 @@
 </nav>
 <!--导航-->
 <!--内容-->
-    {% block content %}{% endblock %}
+{% block content %}{% endblock %}
 <!--内容-->
 <!--底部-->
 <footer>
@@ -100,24 +104,30 @@
 </footer>
 <!--底部-->
 <script src="{% static 'base/js/jquery.min.js' %}"></script>
-<script src="{% static 'base/js/bootstrap.min.js'%}"></script>
-<script src="{% static 'base/js/jquery.singlePageNav.min.js'%}"></script>
-<script src="{% static 'base/js/wow.min.js'%}"></script>
-<script src="{% static 'lazyload/jquery.lazyload.min.js'%}"></script>
+<script src="{% static 'base/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'base/js/jquery.singlePageNav.min.js' %}"></script>
+<script src="{% static 'base/js/wow.min.js' %}"></script>
+<script src="{% static 'lazyload/jquery.lazyload.min.js' %}"></script>
 {% block js %}{% endblock %}
 <script src="//cdn.bootcss.com/holder/2.9.4/holder.min.js"></script>
 <script>
-    $(function() {
+    $(function () {
         new WOW().init();
     })
 
 </script>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $("img.lazy").lazyload({
             effect: "fadeIn"
         });
     });
+    $(document).ready(function () {
+        $("#do_search").click(function () {
+            let keyword = $('#keyword').val();
+            location.href = "{%  url 'search' %}?keyword=" + keyword;
+        });
+    })
 
 </script>
 </body>

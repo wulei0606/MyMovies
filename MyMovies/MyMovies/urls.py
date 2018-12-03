@@ -18,19 +18,21 @@ from django.contrib import admin
 from django.conf import settings
 from django.views.static import serve
 
-from users.views import IndexView,LoginView,LoginOutView,RegisterView
-from movies.views import AnimationView,PlayView
+from users.views import IndexView,LoginView,LoginOutView,RegisterView,UserInfoView,PwdView
+from movies.views import AnimationView,PlayView,SearchView
 from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',IndexView.as_view(),name="index"),
+    re_path('(?P<page>\d+)/$',IndexView.as_view(),name="index"),
     path('login/',LoginView.as_view(),name="login"),
     path('logout/',LoginOutView.as_view(),name="logout"),
     path('register/',RegisterView.as_view(),name="register"),
     path('animation/',AnimationView.as_view(),name="animation"),
     re_path('play/(?P<id>\d+)/$',PlayView.as_view(),name="play"),
     # re_path(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
+    path('userinfo/',UserInfoView.as_view(),name='userinfo'),
+    path('changepwd/',PwdView.as_view(),name='changepwd'),
+    path('search/',SearchView.as_view(),name='search'),
 
-    # path('play/')
 ]
 urlpatterns += static('/media/', document_root=settings.MEDIA_ROOT)
